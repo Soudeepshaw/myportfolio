@@ -110,3 +110,24 @@ a{
     text-decoration: none;
     color: black;
 }
+@media (max-width:480px){
+    .username{
+        font-size:.6rem;
+        margin-left:-20px;
+        margin-right:-20px;
+        
+    }
+    .icon-text ul{
+        font-size:.6rem;
+        
+    }
+    #changes{
+        font-size:.8rem;
+        
+    }
+   
+    #change{
+        font-size:.8rem;
+    }
+   
+}
