@@ -1,0 +1,346 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+body{
+  background-image:url(images/myprojectlanding.png);
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+  background-size: 100% 100%;
+  font-family: 'Martel Sans', sans-serif;
+  font-size: 1.2rem; 
+  z-index: -1;
+}
+
+
+
+.nflex{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  height:30px;
+  width: 100%;
+ 
+}
+.nleft{
+  width: 700px;
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+  border-radius: 5px;
+  background-color:transparent;
+  margin-right: 200px;
+  
+  
+}
+.navli{
+  border-right: 2px solid rgb(158, 137, 137);
+  border-left: 2px solid rgb(158, 137, 137);
+  height: 100%;
+  
+  padding-top: 4px;
+  box-shadow: 10px 0px 20px rgba(241, 214, 214, 0.3),
+            -10px 0px 20px rgba(226, 225, 225, 0.3);
+}
+ul{
+  list-style: none;
+ 
+}
+
+.nav_barlist{
+    display: flex;
+    list-style: none;
+}
+  
+.item{
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+}
+.item:hover {
+  background-color: #555;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+a:hover{
+  background-color: #555;
+}
+
+h1 {
+  font-size: 5.25vmin;
+  text-align: center;
+  color: white;
+}
+p {
+    font-size: max(10pt, 2.5vmin);
+    line-height: 1.4;
+    color: #0e390e;
+    margin-bottom: 1.5rem;
+  }
+  
+.wrap {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  width: 80vmin;
+  height: 15em;
+  margin: 2rem auto;
+  border: 8px solid;
+ 
+  transition: .5s ease-in-out;
+  position: relative;
+  overflow: hidden;
+  }
+.overlay {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  padding: 1rem .75rem;
+  background-image: url(images/aigenerator2.png);
+  transition: .4s ease-in-out;
+  z-index: 1;
+}
+.overlay-content {
+display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 15vmin;
+  height: 100%;
+  padding: .5rem 0 0 .5rem;
+  border: 3px solid;
+  border-image: 
+      linear-gradient(
+        to bottom, 
+        #494722 5%,
+        rgb(154, 11, 170) 35% 65%,
+        #232771 95%
+      ) 0 0 0 100%;
+  transition: .3s ease-in-out .2s;
+  z-index: 1;
+  }
+.image-content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50vmin;
+  height: 100%;
+  background-image: url("images/Capture.JPG");
+  background-size: cover;
+  transition: .3s ease-in-out;
+  
+}
+.image-contents {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50vmin;
+  height: 100%;
+  background-image: url("images/analysissaleswallpaper.jpg");
+  background-size: cover;
+  transition: .3s ease-in-out;
+  
+}
+.image-contenty {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60vmin;
+  height: 100%;
+  background-image: url("images/t20worlcupwallpare.jpg");
+  background-size: 400px 270px;
+  transition: .3s ease-in-out;
+  
+}
+.image-contentF{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60vmin;
+  height: 100%;
+  background-image: url("images/NEWSWALL.jpg");
+  background-size:cover;
+  transition: .3s ease-in-out;
+  
+}
+  
+.inset {
+  max-width: 60%;
+  margin: 0.25em 1em 1em 0;
+  border-radius: 0.25em;
+  float: left;
+  
+}
+  
+.dots {
+  position: absolute;
+  bottom: 1rem;
+  right: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 55px;
+  height: 4vmin;
+  transition: .3s ease-in-out .3s;
+  
+}
+.dot {
+  width: 14px;
+  height: 14px;
+  background: rgb(117, 72, 222);
+  border: 1px solid rgb(231, 78, 55);
+  border-radius: 50%;
+  transition: .3s ease-in-out .3s;
+}
+  
+.text {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60vmin;
+  height: 100%;
+  padding: 3vmin 4vmin;
+  background: #fff;
+  box-shadow: inset 1px 1px 15px 0 rgba(0 0 0 / .4);
+  overflow-y: scroll;
+  background-color:rgba(237, 231, 231, 0.121);
+  
+}
+a:link {
+  text-decoration: none;
+  color: wheat;
+}
+
+a:visited {
+  text-decoration: none;
+  color: wheat;
+}
+
+a:hover {
+  text-decoration: none;
+  color:rgb(223, 145, 36);
+  font-size: 150%;
+  transition: all 0.5s ease-in-out;
+}
+
+a:active {
+  text-decoration: none;
+}
+  
+.wrap:hover .overlay
+   {
+    transform: translateX(-60vmin);
+  }
+.wrap:hover .image-content {
+    width: 30vmin;
+  }
+.wrap:hover .overlay-content {
+    border: none;
+    transition-delay: .2s;
+    transform: translateX(60vmin);
+}
+.wrap:hover .dots {
+    transform: translateX(1rem);
+}
+.wrap:hover .dots .dot {
+  background: white;
+}
+  
+  
+
+.animate {
+    animation-duration: 0.7s;
+    animation-timing-function: cubic-bezier(.26, .53, .74, 1.48);
+    animation-fill-mode: backwards;
+  }
+  
+  .pop { animation-name: pop; }
+  @keyframes pop {
+    0% {
+      opacity: 0;
+      transform: scale(0.5, 0.5);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1, 1);
+    }
+  }
+  
+  
+  .slide { animation-name: slide; }
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translate(4em, 0);
+    }
+    100% {
+      opacity: 1;
+      transform: translate(0, 0);
+    }
+  }
+  
+ 
+  .slide-left { animation-name: slide-left; }
+  @keyframes slide-left {
+    0% {
+      opacity: 0;
+      transform: translate(-40px, 0);
+    }
+    100% {
+      opacity: 1;
+      transform: translate(0, 0);
+    }
+  }
+  
+  .slide-up {animation-name: slide-up;}
+  @keyframes slide-up {
+    0% {
+      opacity: 0;
+      transform: translateY(3em);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .delay-1 {
+    animation-delay: 0.3s;
+  }
+  .delay-2 {
+    animation-delay: 0.6s;
+  }
+  .delay-3 {
+    animation-delay: 0.9s;
+  }
+  .delay-4 {
+    animation-delay: 1.2s;
+  }
+  .delay-5 {
+    animation-delay: 1.5s;
+  }
+  .delay-6 {
+    animation-delay: 1.8s;
+  }
+  .delay-7 {
+    animation-delay: 2.1s;
+  }
+  .delay-8 {
+    animation-delay: 2.4s;
+  }
+
+.fflex{
+  display: flex;
+  flex-direction: row;
+  margin-top: 5px;
+
+}
